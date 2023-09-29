@@ -7,7 +7,7 @@ class Zen15 extends ZwaveDevice {
   /**
    * onInit is called when the device is initialized.
    */
-  async onInit() {
+  async onNodeInit() {
     this.log('Zooz Zen15 Power Switch has been initialized');
 
     this.registerCapability('onoff', 'SWITCH_BINARY');

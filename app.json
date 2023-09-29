@@ -14,7 +14,8 @@
     "en": "Adds support for Zooz Zwave devices"
   },
   "category": [
-    "energy"
+    "appliances",
+    "lights"
   ],
   "permissions": [],
   "images": {
@@ -33,7 +34,7 @@
       },
       "class": "socket",
       "capabilities": [
-        "measure_current",
+        "meter_power",
         "measure_power",
         "onoff"
       ],
