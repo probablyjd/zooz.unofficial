@@ -9,6 +9,10 @@ class Zen15 extends ZwaveDevice {
    */
   async onInit() {
     this.log('Zooz Zen15 Power Switch has been initialized');
+
+    this.registerCapability('onoff', 'SWITCH_BINARY');
+    this.registerCapability('measure_power', 'SENSOR_MULTILEVEL');
+    this.registerCapability('meter_power', 'METER');
   }
 
   /**

@@ -13,7 +13,8 @@
     "en": "Adds support for Zooz Zwave devices"
   },
   "category": [
-    "energy"
+    "appliances",
+    "lights"
   ],
   "permissions": [],
   "images": {
