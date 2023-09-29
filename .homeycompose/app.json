@@ -1,0 +1,28 @@
+{
+  "id": "zooz.unofficial",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Zooz Unofficial"
+  },
+  "description": {
+    "en": "Adds support for Zooz Zwave devices"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "JD Brannock",
+    "email": "homey@brannockhome.com"
+  }
+}

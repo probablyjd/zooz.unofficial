@@ -1,0 +1,216 @@
+[
+  {
+    "id": "151",
+    "value": 50,
+    "label": {
+      "en": "Power Report Value Threshold"
+    },
+    "hint": {
+      "en": "Choose how you want your Power Switch to report power consumption to your controller and associated devices. The number entered as value corresponds to the number of Watts the appliance needs to go over for the change to be reported. So if 50 Watts are entered by default, the Power Switch will report any change in power usage over 50 Watts (whether it’s at least 50 Watts more or 50 Watts less compared to previous report).\r\nValues: 0 – 65535; 0 – disabled (it will not report power consumption based on value change)"
+    },
+    "zwave": {
+      "index": 151,
+      "size": 2
+    },
+    "attr": {
+      "min": 1,
+      "max": 32767
+    },
+    "type": "number"
+  },
+  {
+    "id": "152",
+    "value": 10,
+    "label": {
+      "en": "Power Report Percentage Threshold"
+    },
+    "hint": {
+      "en": "Choose how you want your Power Switch to report power consumption to your controller and associated devices by percentage rate. The number entered as value corresponds to the percentage in power usage change the appliance needs to go over for the event to be reported. So if 10% is entered by default, the Power Switch will report any change in power consumption over 10% (whether it’s at least 10% more or 10% less power consumption compared to previous report).\r\nValues: 0 – 255; 0 – disabled (it will not report power consumption based on percentage change)"
+    },
+    "zwave": {
+      "index": 152,
+      "size": 2
+    },
+    "attr": {
+      "min": 1,
+      "max": 255
+    },
+    "type": "number"
+  },
+  {
+    "id": "171",
+    "value": 30,
+    "label": {
+      "en": "Power Report Frequency"
+    },
+    "hint": {
+      "en": "Choose how often you want your Power Switch to report power consumption (W) to your controller and associated device. The number entered as value corresponds to the number of seconds. So if 30 is entered by default, the Power Switch will report power consumption every 30 seconds.\r\nValues: 5 – 2678400; 0 – disabled (it will not report power consumption)"
+    },
+    "zwave": {
+      "index": 171,
+      "size": 4
+    },
+    "attr": {
+      "min": 5,
+      "max": 2678400
+    },
+    "type": "number"
+  },
+  {
+    "id": "172",
+    "value": 300,
+    "label": {
+      "en": "Energy Report Frequency"
+    },
+    "hint": {
+      "en": "Choose how often you want your Power Switch to report energy usage (KWH) to your controller and associated device. The number entered as value corresponds to the number of seconds. So if 300 is entered by default, the Power Switch will report energy usage every 300 seconds (5 minutes).\r\nValues: 5 – 2678400; 0 – disabled (it will not report energy usage); "
+    },
+    "zwave": {
+      "index": 172,
+      "size": 4
+    },
+    "attr": {
+      "min": 5,
+      "max": 2678400
+    },
+    "type": "number"
+  },
+  {
+    "id": "173",
+    "value": 0,
+    "label": {
+      "en": "Voltage Report Frequency"
+    },
+    "hint": {
+      "en": "Choose how often you want your Power Switch to report voltage (V) to your controller and associated device. The number entered as value corresponds to the number of seconds.\r\nValues: 5 – 2678400; 0 – disabled (default – it will not report voltage levels)"
+    },
+    "zwave": {
+      "index": 173,
+      "size": 4
+    },
+    "attr": {
+      "min": 5,
+      "max": 2678400
+    },
+    "type": "number"
+  },
+  {
+    "id": "174",
+    "value": 0,
+    "label": {
+      "en": "Electricity Report Frequency"
+    },
+    "hint": {
+      "en": "Choose how often you want your Power Switch to report levels of electrical current (A) to your controller and associated device. The number entered as value corresponds to the number of seconds.\r\nValues: 5 – 2678400; 0 – disabled (default – it will not report electrical current levels) "
+    },
+    "zwave": {
+      "index": 174,
+      "size": 4
+    },
+    "attr": {
+      "min": 5,
+      "max": 2678400
+    },
+    "type": "number"
+  },
+  {
+    "id": "20",
+    "value": true,
+    "label": {
+      "en": "Overload Protection"
+    },
+    "hint": {
+      "en": "Overload protection will turn the Power Switch relay off once power exceeds 16.5A for over 5 seconds when this setting is enabled. We DO NOT recommend changing this parameter’s value as it may result in device damage and malfunction.\r\nValues: 0 – Disabled; 1 – Enabled (default). "
+    },
+    "zwave": {
+      "index": 20,
+      "size": 1
+    },
+    "type": "checkbox"
+  },
+  {
+    "id": "21",
+    "value": "0",
+    "label": {
+      "en": "On/Off Status Recovery After Power Failure"
+    },
+    "hint": {
+      "en": "Choose the recovery state for your Power Switch if power outage occurs.\r\nValues: 0 – Power Switch remembers the status prior to power outage and turns back to it (default); 1 – Power Switch automatically turns ON once power is restored (it does not remember the status prior to power outage); 2 – Power Switch automatically turns OFF once power is restored (it does not remember the status prior to power outage); "
+    },
+    "zwave": {
+      "index": 21,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Power Switch remembers the status prior to power outage and turns back to it "
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Power Switch automatically turns ON once power is restored "
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Power Switch automatically turns OFF once power is restored"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "24",
+    "value": "1",
+    "label": {
+      "en": "On/Off Status Change Notifications"
+    },
+    "hint": {
+      "en": "Your Power Switch will automatically send a notification to the controller and other associated devices if its status changes from on to off or the other way round. Choose when you want it to send the report.\r\nValues: 0 – disabled (it will not send status change notifications); 1 – sends notification if status is changed manually or remotely via Z-Wave (default); 2 – sends notification ONLY if status is changed manually by pressing and releasing the Z-Wave button on the Power Switch; "
+    },
+    "zwave": {
+      "index": 24,
+      "size": 1
+    },
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disabled"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Sends notification if status is changed manually or remotely via Z-Wave"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Sends notification ONLY if status is changed manually by pressing and releasing the Z-Wave button on the Power Switch"
+        }
+      }
+    ],
+    "type": "dropdown"
+  },
+  {
+    "id": "27",
+    "value": false,
+    "label": {
+      "en": "LED Indicator Control"
+    },
+    "hint": {
+      "en": "You can choose how the LED indicator displays power consumption on the Power Switch\r\nValues: 0 – LED indicator will display power consumption whenever the device is plugged in (LED stays on at all times – default setting); 1 – LED indicator will display the level of power consumption for 5 seconds only whenever the device is turned on or off (LED indicator will stay off for most of the time)."
+    },
+    "zwave": {
+      "index": 27,
+      "size": 1
+    },
+    "type": "checkbox"
+  }
+]

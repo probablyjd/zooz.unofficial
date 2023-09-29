@@ -1,0 +1,42 @@
+{
+  "name": {
+    "en": "Zen15 Power Switch"
+  },
+  "class": "socket",
+  "capabilities": [
+    "measure_current",
+    "measure_power",
+    "onoff"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "zwave": {
+    "manufacturerId": 634,
+    "productTypeId": [
+      257
+    ],
+    "productId": [
+      13
+    ],
+    "zwaveAllianceProductId": 2517,
+    "associationGroups": [
+      1
+    ],
+    "associationGroupsOptions": {
+      "1": {
+        "hint": {
+          "en": "Z-Wave Plus Lifeline"
+        }
+      }
+    }
+  }
+}
